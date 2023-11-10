@@ -22,16 +22,10 @@
 
 ## Usage
 To use this project, follow these steps:
-  1.Install the required packages:
-  
-  pip install google-api-python-client
-  pip install pymongo
-  pip install mysql-connector-python
-  pip install streamlit
-  
-  2.Run the Streamlit app:streamlit run app.py
- 
-  3.Open the app in your web browser. You can access it by opening a new tab and entering the following URL: http://localhost:8501
+
+  1. Install the required packages: ```pip install -r requirements.txt```
+  2. Run the Streamlit app: ```streamlit run app.py```
+  3. Open the app in your web browser. You can access it by opening a new tab and entering the following URL: ```http://localhost:8501```
 
 ## Features
   - Retrieve data from the YouTube API, including channel information, playlists, videos, and comments.
