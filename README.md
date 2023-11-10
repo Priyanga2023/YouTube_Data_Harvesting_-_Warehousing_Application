@@ -50,7 +50,7 @@ To use this project, follow these steps:
 
 ## Contact Information
   Email: sec19ee048@sairamtap.edu.in
-  LinkedIn: www.linkedin.com/in/priyanga-a-42a869282
+  LinkedIn: www.linkedin.com/in/priyanga070302
 
   If you have any more questions or need further information, please don't hesitate to get in touch. We're here to help and answer any inquiries you may have.
 
