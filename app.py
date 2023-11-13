@@ -369,13 +369,17 @@ def perform_data_analysis():
             st.metric("Channel Views", int(channel_details.get("Channel_Views", 0)))
         with col3:
             st.metric("Playlists Count", len(playlists))
-            
+        
         # Display Top 5 Playlists
         st.subheader("Top 5 Playlists")
-        top_playlists = sorted(playlists, key=lambda x: x.get("Playlist_Item_Count", 0), reverse=True)[:5]
-        top_playlists_df = pd.DataFrame(top_playlists)[['Playlist_Title', 'Playlist_Item_Count']]
-        top_playlists_df.index = range(1, len(top_playlists_df) + 1)
-        st.dataframe(top_playlists_df)
+        try:
+            top_playlists = sorted(playlists, key=lambda x: x.get("Playlist_Item_Count", 0), reverse=True)[:5]
+            top_playlists_df = pd.DataFrame(top_playlists)[['Playlist_Title', 'Playlist_Item_Count']]
+            top_playlists_df.index = range(1, len(top_playlists_df) + 1)
+            st.dataframe(top_playlists_df)
+        except:
+            # Handle the case when 'playlists' is not defined
+            st.write("No playlists exist in the channel")
         
         if video_details:
             # Calculate statistics for video_details
